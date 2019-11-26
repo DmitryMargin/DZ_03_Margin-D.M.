@@ -83,6 +83,7 @@ addUsers()
 ```
 
 ## Task 2
+/* Создаем новый массив, перебираем users и делаем все имена и фамилии с заглавной буквы: */
 ```
 var arrUsersUpperCase = [];
 
@@ -98,12 +99,14 @@ for (el of users) {
 console.log(arrUsersUpperCase)
 ```
 ## Task 3
+/* Ищем пользователей, у которых имя или фамилия начинаются на букву "Е": */
 ```var namesOnE = users.filter(function(e) {
   return e.first_name.charAt(0) == "E" || e.last_name.charAt(0) == "E";
 });
 console.log(namesOnE);
 ```
 ## Task 4
+/* Ищем пользователей старше 30 лет и фильтруем их по возрасту: */
 ```
 var UsersOver30 = users.filter(function(user) {
   let age = new Date().getTime() - new Date(user.birthday).getTime();
