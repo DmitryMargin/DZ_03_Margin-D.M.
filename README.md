@@ -105,9 +105,17 @@ console.log(namesOnE);
 ```
 ## Task 4
 ```
-
+var UsersOver30 = users.filter(function(user) {
+  let age = new Date().getTime() - new Date(user.birthday).getTime();
+  return age > 30 * 365 * 24 * 60 * 60 * 1000;
+})
+UsersOver30.sort(function(a, b) {
+  let birthA = new Date(a.birthday),
+    birthB = new Date(b.birthday)
+  return birthA - birthB
+})
 ```
-## Task 1_вариант с объявлением users весте с существующими пользователями внутри функции
+## Task 1_вариант с объявлением users вместе с существующими пользователями внутри функции
 
 ```
 /* Функция для создания новых пользователей: */
