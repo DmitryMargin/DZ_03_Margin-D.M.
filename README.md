@@ -60,8 +60,8 @@ const input = function(minLength, question) {
 }
 
 /* Функция, в которую помещены существующие пользователи и добавляются новые (тут я немного сомневался, 
-необходимо ли существующих внутрь функции помещать или только новых, а существующих вынести за рамки функции? в конце файла есть вариант
-с объявлением users внутри функции): */
+необходимо ли существующих внутрь функции помещать или только новых, а существующих вынести за рамки функции? 
+в конце файла есть вариант с объявлением users внутри функции): */
 var addUsers = function() {
   
   let countNewUsers = prompt("Please enter amount of users")
@@ -83,7 +83,21 @@ addUsers()
 ```
 
 ## Task 2
+```
+var arrUsersUpperCase = [];
 
+function toCapitalizeCase(str) {
+  return str.charAt(0).toUpperCase() + str.substring(1)
+}
+
+for (el of users) {
+  el.first_name = toCapitalizeCase(el.first_name)
+  el.last_name = toCapitalizeCase(el.last_name)
+  arrUsersUpperCase.push(el)
+}
+console.log(arrUsersUpperCase)
+```
+## Task 3
 
 ## Task 3
 
