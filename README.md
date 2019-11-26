@@ -108,7 +108,7 @@ console.log(arrUsersUpperCase)
 /* Ищем пользователей, у которых имя или фамилия начинаются на букву "Е": */
 
 var namesOnE = users.filter(function(e) {
-  return e.first_name.charAt(0) == "E" || e.last_name.charAt(0) == "E";
+  return e.first_name.charAt(0) == "E" || e.last_name.charAt(0) == "E" || e.first_name.charAt(0) == "e" || e.last_name.charAt(0) == "e";
 });
 console.log(namesOnE);
 ```
