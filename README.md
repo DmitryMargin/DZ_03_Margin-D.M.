@@ -98,9 +98,15 @@ for (el of users) {
 console.log(arrUsersUpperCase)
 ```
 ## Task 3
+```var namesOnE = users.filter(function(e) {
+  return e.first_name.charAt(0) == "E" || e.last_name.charAt(0) == "E";
+});
+console.log(namesOnE);
+```
+## Task 4
+```
 
-## Task 3
-
+```
 ## Task 1_вариант с объявлением users весте с существующими пользователями внутри функции
 
 ```
